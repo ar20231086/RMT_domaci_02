@@ -51,7 +51,6 @@ public class Server {
 						System.out.println("korisnik terminirao sesiju");
 						return;
 					case 1:
-						// System.out.println("korisnik vrsi uplatu");
 						izvrsiUplatu(clientInputStream, clientOutputStream);
 						break;
 					case 2:
@@ -136,7 +135,6 @@ public class Server {
 			buffer = fileKartice.readLine();
 			while (buffer != null) {
 				if (user.equals(buffer)) { // uspeh
-					// System.out.println("kartica vazeca");
 					user = null;
 					break;
 				}
